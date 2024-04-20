@@ -1,7 +1,7 @@
 name: flutter_image_test_utils
 description: Provides an easier and simple way to test flutter network images
 homepage: https://github.com/WillACosta/flutter_image_test_utils
-version: 0.0.1
+version: 1.0.0
 license: MIT
 repository: https://github.com/WillACosta/flutter_image_test_utils
 issue_tracker: https://github.com/WillACosta/flutter_image_test_utils/issues
