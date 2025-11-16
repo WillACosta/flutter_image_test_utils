@@ -4,7 +4,8 @@ This package provides a simple and easier way to test flutter widgets that are u
 `Image.network` or `CachedNetworkImage`, by using a mock HTTP client with mocktail stubs
 that responds with a fake image for every requests.
 
-> ℹ️ This is an inspiration of: [image_test_utils](https://github.com/roughike/image_test_utils) that is discontinued and [mock_image_http](https://github.com/flutter/flutter/blob/master/dev/manual_tests/test/mock_image_http.dart) from Flutter team.
+> [!NOTE]
+> This is an inspiration of: [image_test_utils](https://github.com/roughike/image_test_utils) that is discontinued and [mock_image_http](https://github.com/flutter/flutter/blob/master/dev/manual_tests/test/mock_image_http.dart) from the Flutter team.
 
 ## Usage
 
@@ -21,7 +22,7 @@ dev_dependencies:
   flutter_image_test_utils: ^1.0.0
 ```
 
-In your widget tests, simple import the library and test function with: `provideMockedNetworkImages()`, for example:
+Import the library and wrap the function with: `provideMockedNetworkImages()`, for example:
 
 ```dart
 import ...
