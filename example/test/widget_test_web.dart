@@ -12,7 +12,8 @@ import 'package:example/main.dart';
 import 'package:flutter_image_test_utils/flutter_image_test_utils.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test on web', (WidgetTester tester) async {
+  testWidgets('Counter increments smoke test on web',
+      (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await provideMockedNetworkImages(() async {
       await tester.pumpWidget(const MyApp());

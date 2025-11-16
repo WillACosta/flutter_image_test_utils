@@ -1,3 +1,7 @@
+## 1.1.1
+
+- Run `dart format` to adhere pub dev code guidelines
+
 ## 1.1.0
 
 - Added web support
