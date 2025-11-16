@@ -9,7 +9,6 @@ void main() {
     (WidgetTester tester) async {
       provideMockedNetworkImages(() async {
         await tester.pumpWidget(const MyApp());
-
         expect(find.text('Flutter Demo'), findsOneWidget);
         expect(find.byType(Image), findsOneWidget);
       });

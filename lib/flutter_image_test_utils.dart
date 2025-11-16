@@ -1,3 +1,3 @@
-library flutter_image_test_utils;
+library;
 
 export 'image_test/image_test.dart';

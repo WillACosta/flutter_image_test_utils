@@ -1,8 +1,14 @@
-### @flutter_image_test_utils
+<h1 align="center">Flutter Image Test Utils 🖼️</h1>
 
-This package provides a simple and easier way to test flutter widgets that are using
-`Image.network` or `CachedNetworkImage`, by using a mock HTTP client with mocktail stubs
-that responds with a fake image for every requests.
+<p align="center">
+  This package provides a simple and easier way to test flutter widgets that are using `Image.network` or
+  `CachedNetworkImage`, by using a mock HTTP client with mocktail stubs that responds with a fake image for every requests.
+  <br><br>
+  <small>
+    Drop a 👍🏽 and a ⭐ <a href="https://github.com/WillACosta/flutter_image_test_utils">to support the project!</a>
+  </small>
+  <br><br>
+</p>
 
 > [!NOTE]
 > This is an inspiration of: [image_test_utils](https://github.com/roughike/image_test_utils) that is discontinued and [mock_image_http](https://github.com/flutter/flutter/blob/master/dev/manual_tests/test/mock_image_http.dart) from the Flutter team.
@@ -12,17 +18,17 @@ that responds with a fake image for every requests.
 Run this command on the root folder of your Flutter project:
 
 ```sh
-flutter pub add flutter_image_test_utils
+flutter pub add -d flutter_image_test_utils
 ```
 
 Or simple paste the following dependency on your `pubspec.yaml` file:
 
 ```yaml
 dev_dependencies:
-  flutter_image_test_utils: ^1.0.0
+  flutter_image_test_utils: ^1.0.1
 ```
 
-Import the library and wrap the function with: `provideMockedNetworkImages()`, for example:
+Import the library and wrap your test function with: `provideMockedNetworkImages()`, for example:
 
 ```dart
 import ...

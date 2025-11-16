@@ -32,8 +32,8 @@ T provideMockedNetworkImages<T>(
 }) {
   return HttpOverrides.runZoned(
     callback,
-    createHttpClient: (_) => _createMockImageHttpClient(
-      _,
+    createHttpClient: (ctx) => _createMockImageHttpClient(
+      ctx,
       imageBytes,
     ),
   );
@@ -43,7 +43,7 @@ class FakeHttpHeaders extends Fake implements HttpHeaders {}
 
 /// Returns a mock HTTP client that responds with an image to all requests.
 MockHttpClient _createMockImageHttpClient(
-  SecurityContext? _,
+  SecurityContext? securityContext,
   List<int> imageBytes,
 ) {
   final MockHttpClient client = MockHttpClient();
