@@ -13,6 +13,9 @@
 > [!NOTE]
 > This is an inspiration of: [image_test_utils](https://github.com/roughike/image_test_utils) that is discontinued and [mock_image_http](https://github.com/flutter/flutter/blob/master/dev/manual_tests/test/mock_image_http.dart) from the Flutter team.
 
+> [!IMPORTANT]
+> On the web, this package does not mock the HTTP client. It only executes the callback. This is because `dart:io` is not available on the web.
+
 ## Usage
 
 Run this command on the root folder of your Flutter project:
@@ -25,7 +28,7 @@ Or simple paste the following dependency on your `pubspec.yaml` file:
 
 ```yaml
 dev_dependencies:
-  flutter_image_test_utils: ^1.0.1
+  flutter_image_test_utils: ^1.1.0
 ```
 
 Import the library and wrap your test function with: `provideMockedNetworkImages()`, for example:
